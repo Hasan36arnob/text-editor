@@ -7,7 +7,30 @@
 		<title>Electron Editor</title>
 	</head>
 	<body>
-		<textarea id="text-area" spellcheck="false"></textarea>
+		<div class="app-container">
+			<header class="app-header">
+				<div class="file-info">
+					<span id="file-name">Untitled</span>
+				</div>
+				<div class="actions">
+					<!-- Additional UI elements could go here -->
+				</div>
+			</header>
+
+			<main class="editor-main">
+				<textarea id="text-area" spellcheck="false" placeholder="Start typing here..."></textarea>
+			</main>
+
+			<footer class="app-footer">
+				<div class="status-left">
+					<span id="char-count">0 characters</span> | 
+					<span id="word-count">0 words</span>
+				</div>
+				<div class="status-right">
+					<span>UTF-8</span>
+				</div>
+			</footer>
+		</div>
 
 		<script src="renderer.js"></script>
 	</body>
